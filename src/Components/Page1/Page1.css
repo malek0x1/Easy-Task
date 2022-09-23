@@ -1,0 +1,145 @@
+.page1 {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.page1-wrapper {
+    height: 100vh;
+    background-image: url('https://malek0x1.com/Easy-Task/images/background.jpg');
+
+}
+
+.page1 h5 {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding: 18px;
+    border: 2px dashed #3d2514;
+    /* margin-bottom: 25px; */
+    width: fit-content;
+}
+
+.page1 h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 130px;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 6px 6px #fee8bc;
+    /* margin-bottom: 10px; */
+}
+
+.page1 h2 {
+    font-size: 65px;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 6px 6px #fee8bc;
+
+}
+
+.page1-right {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+
+
+}
+
+.page1-right img {
+    position: absolute;
+    right: 10px;
+    top: -290px;
+    width: 700px;
+    object-fit: cover;
+    height: 800px;
+    z-index: 1;
+}
+
+.page1-left {
+
+    padding-top: 20px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .page1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .page1-right img {
+        display: block;
+        position: absolute;
+        object-fit: cover;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -10%);
+        transform: translate(-50%, -20%);
+        width: 400px;
+        height: 500px;
+    }
+
+    .page1 h1 {
+        font-size: 90px;
+    }
+
+    .page1 h2 {
+        font-size: 50px;
+    }
+
+    .page1 {
+        text-align: center;
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .page1-right img {
+        display: none;
+    }
+
+    .page1 h1 {
+        font-size: 60px;
+    }
+
+    .page1 h2 {
+        font-size: 50px;
+    }
+
+    .page1 {
+        text-align: center;
+    }
+    .page1-right img {
+        display: block;
+        object-fit: cover;
+        /* top: 50px; */
+        width: 400px;
+        height: 450px;
+
+
+
+        
+        top: 50%;
+        left: 40%;
+        -webkit-transform: translate(-50%, -10%);
+        transform: translate(-50%, -10%);
+
+    }
+
+}

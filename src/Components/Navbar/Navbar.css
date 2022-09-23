@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    /* transition: all .5s linear; */
+}
+
+.hamburger{
+    display: none;
+}
+@font-face {
+    font-family: "Bebas Neue Bold";
+    src: url("//db.onlinewebfonts.com/t/4cb0a725d25db5a5401af8cffa9f3beb.eot");
+    src: url("//db.onlinewebfonts.com/t/4cb0a725d25db5a5401af8cffa9f3beb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4cb0a725d25db5a5401af8cffa9f3beb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4cb0a725d25db5a5401af8cffa9f3beb.woff") format("woff"), url("//db.onlinewebfonts.com/t/4cb0a725d25db5a5401af8cffa9f3beb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4cb0a725d25db5a5401af8cffa9f3beb.svg#Bebas Neue Bold") format("svg");
+}
+
+.container {
+    padding: 20px 40px;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    padding: 20px 40px;
+    color: #3D2514;
+    font-family: "Bebas Neue Bold", cursive;
+    position: relative;
+
+}
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar-top-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.navbar-right-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+    padding-top: 20px;
+}
+
+.navbar-right-menu h4 {
+    z-index: 999;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.hamburger span{
+    /* display: none !important; */
+    color: white !important;
+    z-index: 999999999999;
+} 
+
+
+
+@media screen and (max-width: 1024px) {
+    .hamburger {
+        display:block;
+    }
+    .navbar-top-right h3 {
+        font-size: 15px;
+        display: none;
+    }
+
+    .navbar-top-right img {
+        display: none;
+    }
+
+    .logo-nav {
+        width: 200px;
+    }
+
+
+    .navbar-right-menu h4 {
+        font-size: 17px;
+
+    }
+
+    /* .hamburger span {
+        display: block !important;
+        font-size: 40px;
+        cursor: pointer;
+        z-index: 999999999999999999999 !important;
+        color: white !important;
+
+    } */
+
+    .navbar {
+        text-align: center !important;
+    }
+
+
+
+    .navbar-right-menu h4{
+        font-size: 30px;
+    }
+    .navbar-right-menu.active {
+        flex-direction: column;
+        position: fixed;
+        z-index: 999999;
+        background-color: #000;
+        color: white;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(1200px);
+        transition: all .5s linear;
+
+    }
+    .close span{
+        
+        position: fixed;
+        z-index: 999999999999999999999;
+        color: #FFF;
+        font-size: 40px;
+        top: 20px;
+        right: 42px;
+        cursor: pointer;
+
+    }
+    .navbar-right-menu:not(.navbar-right-menu.active){
+        display: none;
+    }
+
+}
+
+
+
+
+
+.hamburger.active {
+    color: black !important;
+}
+.hamburger  {
+    position: relative !important;
+    z-index: 999999999999999999999 !important;
+    color: #FFF !important;
+}
+

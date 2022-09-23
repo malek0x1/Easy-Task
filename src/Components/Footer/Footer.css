@@ -1,0 +1,141 @@
+.footer {
+    padding-top: 2px !important;
+    color: white;
+}
+
+.footer-wrapper {
+    min-height: 80vh;
+    padding-top: 100px !important;
+
+    background-repeat: no-repeat;
+    background-image: url('https://malek0x1.com/Easy-Task/images/footer-bg.jpg');
+
+}
+
+.footer-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* padding-right: 40px; */
+
+
+}
+
+.footer-left p {
+    max-width: 60%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-top: 20px;
+}
+
+
+
+
+.footer-right-top,
+.footer-right-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 22px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-family: "Bebas Neue Bold", cursive;
+}
+
+.footer-right-bottom {
+    padding-top: 10px;
+}
+
+.footer-right {
+    /* background-color: red; */
+    width: 60%;
+}
+
+.footer-right-top h5 {
+    /* background-color: red; */
+}
+
+.footer-bottom {
+    position: relative
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 30px;
+    left: 42px;
+    font-family: "Bebas Neue Bold", cursive;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    right: 42px;
+    color: black;
+}
+
+.social-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: white;
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 768px) {
+    .footer-body {
+        gap: 50px;
+        flex-wrap: wrap;
+
+    }
+
+    .footer-left p {
+        max-width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5
+    }
+
+    .footer-right {
+        display: none;
+    }
+
+    .footer-bottom p {
+        bottom: 20px;
+    }
+
+    .social-icons {
+
+        bottom: 60px;
+    }
+    .footer.container{
+        padding: 0px;
+    }
+    .footer-logo{
+        width: 300px;
+    }
+
+
+    .footer-wrapper {
+    min-height: 60vh;
+    }
+    
+}
+

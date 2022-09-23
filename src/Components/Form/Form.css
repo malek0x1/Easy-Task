@@ -1,0 +1,103 @@
+.form {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+}
+
+.form .subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+}
+
+.form .title {
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+
+}
+
+.form .form-inputs {
+    padding-top: 50px;
+    position: relative;
+    z-index: 1;
+    max-width: 784px;
+    margin: 0 auto 175px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.form .form-inputs input,
+.form button {
+    width: 48%;
+    height: 65px;
+    margin-bottom: 27px;
+    background: transparent;
+    border: 1px solid #bebebe;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 0 22px;
+    color: #000000;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.form button {
+    background-color: #bf2121;
+    color: white;
+    cursor: pointer;
+}
+
+.form #top-left {
+    position: absolute;
+    top: -180px;
+    left: -340px;
+}
+
+.form #bottom-left {
+    position: absolute;
+    bottom: -180px;
+    left: -180px;
+}
+
+.form #bottom-right {
+    position: absolute;
+    bottom: -400px;
+    right: -550px;
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        min-height: 100vh;
+    }
+
+    .form img {
+        display: none;
+    }
+
+    .form-inputs {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form .form-inputs input {
+        width: 100%;
+    }
+
+
+}
